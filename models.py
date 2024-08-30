@@ -22,7 +22,7 @@ class Blog:
             title=data['title'],
             content=data['content'],
             author=data['author'],
-            tags=data['tags'].split(', ')  
+            tags=data['tags'].split(',')  
         )
 
     def to_dict(self) -> dict:
@@ -34,5 +34,5 @@ class Blog:
             'title': self.title,
             'content': self.content,
             'author': self.author,
-            'tags': ', '.join(self.tags)  
+            'tags': ','.join(self.tags)  
         }
